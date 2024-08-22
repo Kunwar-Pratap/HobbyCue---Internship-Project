@@ -1,3 +1,4 @@
+import { poppins } from "@/config/fonts";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -8,10 +9,27 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        xsm: "470px",
+        slg: "900px",
+        xxl: '1440px',
+      },
+      zIndex: {
+        99999: "99999",
+        999: "999",
+        1: "1",
+      },
+      colors: {
+        greyHo: '#08090A',
+        purpleHo: "#8064A2",
+        greyDarkerHo: "#6D747A",
+        greyLightHo: "#CED4DA",
+        skyHo: "#0096C8",
+        heroHo: "#F7F5F9"
+      },
+      fontFamily: {
+        fontSans: ["var(--font-sans)"],
+        poppins: ["var(--font-poppins)"],
       },
     },
   },
