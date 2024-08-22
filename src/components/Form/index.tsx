@@ -9,7 +9,7 @@ import FullWidthOutlineButton from '../Buttons/FullWidthOutlineButton';
 import FullWidthSolidButton from '../Buttons/FullWidthSolidButton';
 
 export default function Form() {
-    const [isSignIn, setIsSignIn] = useState(true);
+    const [isSignIn, setIsSignIn] = useState<boolean>(true);
 
     const handleTabClick = (formType: string) => {
         setIsSignIn(formType === 'signin');
@@ -17,7 +17,6 @@ export default function Form() {
 
     return (
         <div >
-            {/* Tabs */}
             <div className="flex xl:justify-start justify-center mb-6 gap-6">
                 <button
                     className={`md:text-xl md:leading-[30px] text-base leading-6 font-semibold border-none outline-none focus:outline-none pb-2 ${isSignIn ? ' text-purpleHo decoration-purpleHo underline underline-offset-[12px] decoration-[2px]' : 'no-underline text-[#939CA3]'
@@ -34,8 +33,6 @@ export default function Form() {
                     Join In
                 </button>
             </div>
-
-            {/* Form Container */}
             <div className="space-y-4">
                 {isSignIn ? <SignInForm /> : <JoinInForm />}
             </div>
@@ -49,9 +46,7 @@ function SignInForm() {
             <div className="order-3 xl:order-1 mt-4 space-y-4">
                 <GoogleButton />
                 <FacebookButton />
-
             </div>
-
             <div className="inline-flex items-center justify-center w-full relative py-3 order-2">
                 <hr className="w-full h-[2px]  bg-greyLightHo border-0" />
                 <span className="absolute px-2 font-semibold leading-4 text-black -translate-x-1/2 bg-heroHo left-1/2 text-xs">Or connect with</span>
@@ -75,7 +70,6 @@ function SignInForm() {
                             width={16}
                         />
                     </span>
-
                 </div>
             </div>
             <div className="flex items-center justify-between py-3 order-1 xl:order-3">
@@ -102,7 +96,6 @@ function SignInForm() {
                     text='Continue'
                     className='xl:hidden'
                 />
-
             </div>
         </form>
     );
@@ -158,19 +151,17 @@ function JoinInForm() {
                         {' '}Privacy Policy{' '}
                     </span>
                     .
-
                 </p>
             </div>
             <div className="order-1 xl:order-3">
                 <FullWidthOutlineButton
-                text='Agree and Continue'
-                className='hidden xl:block'
+                    text='Agree and Continue'
+                    className='hidden xl:block'
                 />
                 <FullWidthSolidButton
-                text='Agree and Continue'
-                className='xl:hidden'
+                    text='Agree and Continue'
+                    className='xl:hidden'
                 />
-
             </div>
         </form>
     );

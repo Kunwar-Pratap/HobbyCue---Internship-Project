@@ -1,4 +1,3 @@
-import { poppins } from "@/config/fonts";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,8 +9,8 @@ const config: Config = {
   theme: {
     extend: {
       screens: {
-        xsm: "470px",
         slg: "900px",
+        xlg: "1380px",
         xxl: '1440px',
       },
       zIndex: {

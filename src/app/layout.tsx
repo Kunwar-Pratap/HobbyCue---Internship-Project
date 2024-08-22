@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { poppins, fontSans } from "@/config/fonts";
@@ -23,11 +22,11 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body className={`${poppins.className} antialiased`}>
-        <div className="min-h-screen ">
-          {/* <Navbar /> */}
-          <main className="max-w-screen-xxl mx-auto relative">
+        <div className="min-h-screen relative">
+          <Navbar />
+          <main className="max-w-screen-xxl mx-auto">
             {children}
-            {/* <ScrollToTop /> */}
+          <ScrollToTop />
           </main>
           <Footer />
         </div>

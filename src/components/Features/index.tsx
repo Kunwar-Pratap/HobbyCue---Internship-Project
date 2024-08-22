@@ -8,7 +8,6 @@ const Features = () => {
     return (
         <section className="xxl:max-h-[818px] h-full w-full">
             <div className="md:p-[100px] py-12 px-6">
-
                 <div className="flex flex-wrap -m-4">
                     {featuresData.map((item: TFeaturesData) => (
                         <div className="p-4 md:p-3 md:w-1/2 w-full" key={item.id}>
@@ -22,19 +21,13 @@ const Features = () => {
                                     />
                                     <h2 className="text-black md:leading-[36px] md:text-2xl text-[18px] leading-[27px] font-semibold">{item.title}</h2>
                                 </div>
-
                                 <p className="md:leading-[27px] text-xs leading-[20px] md:text-[18px] font-light text-black text-center sm:text-left h-full">{item.desc}</p>
-
                                 <OutlineButton
                                     text={item.buttonText}
                                 />
-
                             </div>
                         </div>
                     ))}
-
-
-
                 </div>
             </div>
         </section>

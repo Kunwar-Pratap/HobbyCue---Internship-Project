@@ -9,9 +9,7 @@ const Footer = () => {
   return (
     <footer className="text-gray-600 body-font max-w-screen-xxl mx-auto">
       <div className="md:px-[102px] md:py-[60px] p-6">
-
         <div className="flex flex-wrap md:text-left order-first gap-6 md:gap-0">
-
           <div className="lg:w-1/4 md:w-1/2 w-full">
             <h2 className="md:text-sm  text-xs leading-[18px] font-bold text-greyHo mb-3">Hobbycue</h2>
             <nav className="list-none flex flex-col gap-2 md:gap-1">
@@ -42,7 +40,6 @@ const Footer = () => {
               ))}
             </nav>
           </div>
-
           <div className="lg:w-1/4 md:w-1/2 w-full flex flex-col gap-6 md:mt-6 lg:mt-0">
             <div >
               <h2 className="md:text-sm  text-xs leading-[18px] font-bold text-greyHo mb-3">Social Media</h2>
@@ -59,7 +56,6 @@ const Footer = () => {
                   </li>
                 ))}
               </div>
-
             </div>
             <div >
               <h2 className="md:text-sm  text-xs leading-[18px] font-bold text-greyHo mb-3">Invite Friends</h2>
@@ -78,12 +74,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-
       <div className="bg-[#F7F5F9]">
         <div className=" px-5 py-6 mx-auto flex items-center justify-center sm:flex-row flex-col">
           <p className="md:text-sm text-xs font-medium leading-[18px] text-greyHo">© Purple Cues Private Limited</p>
-
         </div>
       </div>
     </footer>

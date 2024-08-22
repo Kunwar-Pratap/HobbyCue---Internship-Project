@@ -1,6 +1,7 @@
 export type TOutlineButton = {
     text: string;
     className?: string;
+    onClick?: () => void;
 }
 
 export type TFooterLinks = {
@@ -20,4 +21,9 @@ export type TFeaturesData = {
     desc: string;
     ico: string;
     buttonText: string;
+}
+
+export type TNavIconsData = {
+    id: number;
+    icon: string;
 }
