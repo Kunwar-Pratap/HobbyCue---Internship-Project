@@ -15,12 +15,12 @@ const AddTestimonials = () => {
                             width={40}
                             alt='add'
                         />
-                        <h3 className="text-[24px] leading-[36px] font-medium text-greyHo">
+                        <h3 className="md:text-[24px] md:leading-[36px] leading-[27px] text-[18px] font-semibold text-greyHo">
                             Add your own
                         </h3>
                     </div>
 
-                    <p className="text-[18px] leading-[30px] text-greyHo font-light text-center sm:text-left">Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page</p>
+                    <p className="md:text-[18px] md:leading-[30px] text-xs leading-[20px] text-greyHo font-light text-center sm:text-left">Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page</p>
                     <div className="inline-flex">
                         <OutlineButton
                             text={'Add new'}

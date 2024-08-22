@@ -11,7 +11,7 @@ const Features = () => {
 
                 <div className="flex flex-wrap -m-4">
                     {featuresData.map((item: TFeaturesData) => (
-                        <div className="p-4 md:p-3 md:w-1/2 " key={item.id}>
+                        <div className="p-4 md:p-3 md:w-1/2 w-full" key={item.id}>
                             <div className="flex rounded-lg h-full bg-transparent border border-[#CED4DA] lg:p-[40px] p-6 flex-col sm:justify-start sm:items-start justify-center items-center gap-6">
                                 <div className="flex items-center justify-start gap-6">
                                     <Image
@@ -20,10 +20,10 @@ const Features = () => {
                                         height={40}
                                         width={40}
                                     />
-                                    <h2 className="text-black leading-[36px] text-2xl font-semibold">{item.title}</h2>
+                                    <h2 className="text-black md:leading-[36px] md:text-2xl text-[18px] leading-[27px] font-semibold">{item.title}</h2>
                                 </div>
 
-                                <p className="leading-[27px] text-[18px] font-light text-black text-center sm:text-left h-full">{item.desc}</p>
+                                <p className="md:leading-[27px] text-xs leading-[20px] md:text-[18px] font-light text-black text-center sm:text-left h-full">{item.desc}</p>
 
                                 <OutlineButton
                                     text={item.buttonText}

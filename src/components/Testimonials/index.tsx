@@ -13,12 +13,12 @@ const Testimonials = () => {
                             width={40}
                             alt='add'
                         />
-                        <h3 className="text-[24px] leading-[36px] font-medium text-greyHo">
+                        <h3 className="md:text-[24px] md:leading-[36px] font-semibold text-[18px] leading-[27px] text-greyHo">
                             Testimonials
                         </h3>
                     </div>
 
-                    <p className="text-[18px] leading-[30px] text-greyDarkerHo font-light">In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect with like minded people. Websites like hobbycue.com is a great service which helps me get in touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding products and services that I can avail, which I can be assured is going to be of great quality as it comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly recommend it.</p>
+                    <p className="md:text-[18px] md:leading-[30px] text-xs leading-[20px] text-greyDarkerHo font-light">In a fast growing and ever changing city like Bangalore, it sometimes becomes very difficult to find or connect with like minded people. Websites like hobbycue.com is a great service which helps me get in touch with, communicate, connect, and exchange ideas with other dancers. It also provides the extra benefit of finding products and services that I can avail, which I can be assured is going to be of great quality as it comes recommended by people of the hobbycue community. To have discussions, to get visibility, and to be able to safely explore various hobbies and activities in my city, all under one roof, is an excellent idea and I highly recommend it.</p>
                     <div className="flex justify-between items-center flex-col gap-6 xxl:flex-row xxl:gap-0">
                         <Image
                             src={'/assets/images/site/AudioTrack.png'}
